@@ -10,7 +10,7 @@ header{
 background-color: #424e61;
 color: white;
 width: 100%;
-padding: 20px;
+padding: 80px;
 }
 .cabecalho-itens{
 max-width: 60px;
@@ -20,16 +20,16 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho_imagem{
-width: 110%;
+width: 210%;
 display: flex;
 justify-content: flex-start;
 align-items: center;
 }
 .titulo_site{
-padding: 50px;
+padding: 100px;
 text-align: center;
-width: 50%;
-font: 30px;
+width: 70%;
+font: 50px;
 }
 .sociais{
 display: flex;
