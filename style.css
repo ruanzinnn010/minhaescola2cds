@@ -19,8 +19,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho_imagem{
-width: 210%;
+.cabecalho_virgem{
+width: 300px;
+height: 200px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -89,6 +90,6 @@ padding: 12px 0;
 
 }
 
-.link{
-color: #ffffff;
+.link{assds}
+color: #fffffF;
 text-decoration: none;
