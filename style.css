@@ -14,7 +14,7 @@ padding: 80px;
 }
 .cabecalho-itens{
 max-width: 100px;
-margin: 0 auto;
+margin: 40 auto;
 display: flex;
 align-items: center;
 justify-content: center;
