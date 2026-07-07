@@ -54,10 +54,7 @@ justify-content: center;
     filter: drop-shadow(0 0 10px gold);
 }
 
-.banner1{
-display: flex;
-justify-content: center;
-}
+
 .estudante_titulo{
     padding: 50px;
     text-align: center;
