@@ -109,15 +109,6 @@ padding: 12px 0;
 
 }
 
-.link{
-color: #ffaa00;
-text-decoration: none;
-}.estudantes_todos{
-    display: flex;
-    justify-content: align-items;
-    gap: 40px;
-    flex-wrap: wrap;
-}
 
 .estudante-div{
     text-align: center;
