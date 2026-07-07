@@ -28,17 +28,17 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 70%;
+    border-radius: 50%;
     border: 3px solid gold;
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .titulo_site{
-    padding: 50px;
+    padding: 120px;
     text-align: center;
     width: 50%;
     font: 60px;
