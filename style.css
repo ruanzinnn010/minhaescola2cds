@@ -21,17 +21,17 @@ width: 100%;
 padding: 80px;
 }
 .cabecalho-itens{
-max-width: 120px;
+max-width: 1980px;
 margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 3px solid gold;
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
