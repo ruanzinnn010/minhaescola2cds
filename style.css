@@ -28,8 +28,8 @@ align-items: right;
 justify-content: right;
 }
 .cabecalho-imagem{
-    width: 20px;
-    height: 20px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid gold;
