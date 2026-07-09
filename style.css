@@ -21,14 +21,14 @@ width: 100%;
 padding: 80px;
 }
 .cabecalho-itens{
-   max-width: 1980px;
+      max-width: 1980px;
     margin: 0 auto;
     display: flex;
-     /* Alinha os itens em coluna (um embaixo do outro) */
-    align-items: center; /* Move tudo para a esquerda real da tela */
-    justify-content: flex-start;
-    padding-left: 40px; /* Mantém o recuo da borda */
-    padding-top: 40px; /* Dá um espaço para não colar no topo da tela */
+    align-items: center;
+    justify-content: space-between; /* Espalha os 3 blocos: esquerda, meio e direita */
+    padding: 20px 40px; /* Dá espaçamento interno nas laterais e topo */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .cabecalho-imagem{
