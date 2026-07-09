@@ -39,7 +39,6 @@ padding: 80px;
     border: 3px solid gold;
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    align-items: flex-start;
 }
 
 .titulo_site{
