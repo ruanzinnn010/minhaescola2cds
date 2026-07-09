@@ -24,8 +24,8 @@ padding: 80px;
    max-width: 1980px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna (um embaixo do outro) */
-    align-items: flex-start; /* Move tudo para a esquerda real da tela */
+     /* Alinha os itens em coluna (um embaixo do outro) */
+    align-items: center; /* Move tudo para a esquerda real da tela */
     justify-content: flex-start;
     padding-left: 40px; /* Mantém o recuo da borda */
     padding-top: 40px; /* Dá um espaço para não colar no topo da tela */
@@ -39,6 +39,7 @@ padding: 80px;
     border: 3px solid gold;
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    align-items: flex-start;
 }
 
 .titulo_site{
