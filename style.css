@@ -129,7 +129,7 @@ body{
     color: rgb(255, 208, 0);
 }
 .escola{
-    color: rgb(177, 177, 177);
+    color: rgb(185, 4, 4);
 }
 .sobre{
     text-align: center;
@@ -328,7 +328,7 @@ main > h1 {
 }
 
 .pagina-contato p {
-    color: white;
+    color: rgb(0, 190, 180);
 }
 
 .formulario {
