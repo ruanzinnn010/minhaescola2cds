@@ -27,6 +27,279 @@
          <li><a href="jogo.html">Certificados</a></li>
     </ul>
 
+2 de 3.450
+html
+Caixa de entrada
+MATHEUS DO CAMPO VALENTE <matheus.campo.valente@escola.pr.gov.br>
+	
+08:02 (há 8 minutos)
+	
+	
+para mim
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris  | Matheus Valente</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Carregamento do script.js externo -->
+  <script src="script.js" defer></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0F111A;
+      color: #FFFFFF;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      touch-action: manipulation;
+    }
+
+    header {
+      padding: 15px 20px;
+      background: rgba(22, 26, 38, 0.8);
+      border-bottom: 1px solid rgba(123, 44, 191, 0.3);
+      position: relative;
+      z-index: 100;
+    }
+
+    .cabecalho-itens {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .titulo_site {
+      margin: 0;
+      font-size: 2rem;
+      color: #00E5FF;
+      text-align: center;
+    }
+
+    /* ESTILOS DO MENU DROPDOWN */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #FFFFFF;
+      list-style: none;
+      user-select: none;
+    }
+
+    .dropbtn::-webkit-details-marker {
+      display: none;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      right: 0;
+      top: 120%;
+      background-color: #161A26;
+      min-width: 200px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(123, 44, 191, 0.5);
+      border-radius: 10px;
+      padding: 8px 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown-content a {
+      color: #FFFFFF;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgba(123, 44, 191, 0.4);
+      color: #00E5FF;
+    }
+
+    /* ESTRUTURA DO JOGO */
+    .secao-jogo-central {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 15px;
+    }
+
+    .cartao-jogo {
+      background: rgba(22, 26, 38, 0.95);
+      border: 1px solid rgba(123, 44, 191, 0.5);
+      border-radius: 20px;
+      padding: 25px 20px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(123, 44, 191, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .placar {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      font-weight: 600;
+      background: rgba(30, 35, 52, 0.8);
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+
+    .placar span {
+      color: #00E5FF;
+    }
+
+    #canvasTetris {
+      display: block;
+      background-color: #08090E;
+      border: 3px solid #7B2CBF;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(123, 44, 191, 0.4);
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-reiniciar {
+      margin-top: 15px;
+      padding: 10px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #7B2CBF, #9D4EDD);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+    }
+
+    .btn-reiniciar:hover {
+      background: linear-gradient(135deg, #00E5FF, #7B2CBF);
+      transform: translateY(-2px);
+    }
+
+    .controles-mobile {
+      display: grid;
+      grid-template-columns: repeat(4, 50px);
+      grid-template-rows: repeat(2, 45px);
+      gap: 8px;
+      margin-top: 15px;
+      justify-content: center;
+    }
+
+    .btn-control {
+      background: rgba(30, 35, 52, 0.9);
+      border: 1px solid #00E5FF;
+      color: #00E5FF;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .btn-control:active {
+      background: #00E5FF;
+      color: #0F111A;
+    }
+
+    .btn-left { grid-column: 1; grid-row: 2; }
+    .btn-down { grid-column: 2; grid-row: 2; }
+    .btn-right { grid-column: 3; grid-row: 2; }
+    .btn-rotate { grid-column: 2 / span 2; grid-row: 1; width: 100%; }
+    .btn-drop { grid-column: 4; grid-row: 2; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888888;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="cabecalho-itens">
+    <h1 class="titulo_site">Tetris 3D</h1>
+
+    <!-- MENU INTERATIVO -->
+    <details class="dropdown">
+      <summary class="dropbtn">
+        ☰ Menu
+      </summary>
+
+      <div class="dropdown-content">
+        <a href="index.html">🏠 Início</a>
+        <a href="sobre.html">👤 Sobre mim</a>
+        <a href="fotos.html">📸 Minhas fotos</a>
+        <a href="videos.html">🎬 Meus vídeos</a>
+        <a href="contato.html">📞 Meu contato</a>
+        <a href="jogo.html">🎮 Jogo</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main class="secao-jogo-central">
+  <div class="cartao-jogo">
+    <h2 style="font-size: 1.8rem; color: #7B2CBF; margin: 0 0 10px 0;">🎮 Tetris Realista</h2>
+
+    <div class="placar">
+      <div>Pontos: <span id="pontos">0</span></div>
+      <div>Linhas: <span id="linhas">0</span></div>
+    </div>
+
+    <canvas id="canvasTetris" width="240" height="480"></canvas>
+
+    <button class="btn-reiniciar" id="btnReiniciar">Novo Jogo</button>
+
+    <div class="controles-mobile">
+      <button class="btn-control btn-rotate" id="btnRotate">🔄 Girar</button>
+      <button class="btn-control btn-left" id="btnLeft">◄</button>
+      <button class="btn-control btn-down" id="btnDown">▼</button>
+      <button class="btn-control btn-right" id="btnRight">►</button>
+      <button class="btn-control btn-drop" id="btnDrop">⬇</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 | Matheus do Campo Valente. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+
 
 
 
