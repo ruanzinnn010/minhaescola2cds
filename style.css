@@ -174,7 +174,7 @@ body{
     border: none;
     border-radius: 15px;
 }nav {
-    background-color: #3d00a0;
+    background-color: #757576;
 }
 
 nav ul {
@@ -187,7 +187,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: rgb(3, 31, 110);
+    color: rgb(119, 119, 119);
     text-decoration: none;
     padding: 18px 25px;
     font-family: Arial, sans-serif;
@@ -277,7 +277,7 @@ main > h1 {
 
 .pagina-social p {
     text-align: center;
-    color: rgb(81, 0, 221);
+    color: rgb(112, 112, 112);
 }
 
 .redes {
