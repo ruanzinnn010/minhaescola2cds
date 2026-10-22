@@ -11,11 +11,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(0, 0, 0);
+    color: rgb(70, 58, 58);
 }
 
 header{
-background-color: #3d00a0;
+background-color: #bdb9c4;
 color: #007979;
 width: 100%;
 padding: 80px;
