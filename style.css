@@ -11,7 +11,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(70, 58, 58);
+    color: rgb(0, 0, 0);
 }
 
 header{
@@ -85,7 +85,7 @@ width: 38px;
 padding: 4px 8px;
 }
 .estudante{
-    background-color: #19007e;
+    background-color: hsl(240, 2%, 36%);
 }
 
 .estudante.div{
