@@ -1,470 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("Design sem nome.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(0, 0, 0);
+    color: #333333; /* Cinza chumbo para leitura agradável */
 }
 
-header{
-background-color: #bdb9c4;
-color: #007979;
-width: 100%;
-padding: 80px;
+header {
+    background-color: #f5f3eb; /* Creme bem suave */
+    color: #c25934; /* Terracota / Laranja terroso */
+    width: 100%;
+    padding: 80px;
 }
-.cabecalho-itens{
-max-width: 1000px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
+.cabecalho-itens {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cabecalho_imagem{
+.cabecalho_imagem {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid gold;
+    border: 3px solid #c25934; /* Borda terracota */
         /* Animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.titulo_site{
+.titulo_site {
     padding: 50px;
     text-align: center;
     width: 50%;
     font: 60px;
-    color: rgba(255, 225, 0, 0.852);
+    color: #c25934; /* Terracota */
 }
-.sociais img{
+.sociais img {
     width: 40px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.sociais img:hover{
+.sociais img:hover {
     transform: rotate(10deg) scale(1.2);
-    filter: drop-shadow(0 0 10px gold);
+    filter: drop-shadow(0 0 10px rgba(194, 89, 52, 0.6)); /* Sombra terracota */
 }
 
-.banner1{
-display: flex;
-color: #000;
-justify-content: center;
+.banner1 {
+    display: flex;
+    color: #333333;
+    justify-content: center;
 }
-.estudante_titulo{
+.estudante_titulo {
     padding: 50px;
     text-align: center;
-    color: rgb(59, 59, 59);
+    color: #4a4a4a;
 }
-.estudante-nome{
+.estudante-nome {
     text-align: center;
-    color: #373737; /* dourado */
+    color: #c25934; /* Destaque terracota */
 }
-.estudante-imagem{
+.estudante-imagem {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgb(21, 21, 21);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}.estudante-imagem:hover{
-    transform: translateY(-12px) scale(1.08);
-    box-shadow: 0 15px 30px rgba(237, 236, 235, 0.7);
-    cursor: pointer;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-    background-color: hsl(240, 2%, 36%);
-}
-
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-justify-content: space-around;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
-.escola-image{
-    width: 60%;
-    max-width: 800px;
-    height: auto;
-}
-.escola-titulo{
-padding: 50px;
-text-align: center;
-}
-.logo_rodape{
-height: 80px;
-padding: 12px 0;
-
-
-}
-
-.link{
-color: #ffaa00;
-text-decoration: none;
-}.estudantes_todos{
-    display: flex;
-    justify-content: align-items;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.estudante-div{
-    text-align: center;
-}
-body{
-    color: rgb(71, 70, 70);
-}
-.escola{
-    color: rgb(63, 63, 63);
-}
-.sobre{
-    text-align: center;
-    padding: 50px;
-    color: rgb(244, 252, 7);
-}
-
-.sobre h2{
-    color: gold;
-    margin-bottom: 20px;
-}
-
-.sobre p{
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
-}.cabecalho_imagem:hover{
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(15, 15, 15, 0.6);
-}.video {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.video {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.video h2 {
-    margin-bottom: 20px;
-}
-
-.video iframe {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 15px;
-}nav {
-    background-color: #757576;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li a {
-    display: block;
-    color: rgb(119, 119, 119);
-    text-decoration: none;
-    padding: 18px 25px;
-    font-family: Arial, sans-serif;
-    transition: 0.3s;
-}
-
-nav li a:hover {
-    background-color: #494948;
-    color: #000;
-}
-/* TÍTULO DOS CERTIFICADOS */
-
-main > h1 {
-    text-align: center;
-    margin: 40px 0 30px;
-}
-
-
-/* ÁREA DOS CERTIFICADOS */
-
-.certificados {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-
-/* CADA CERTIFICADO */
-
-.certificado {
-    width: 450px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(117, 250, 0, 0.3);
-    transition: 0.3s;
-}
-
-
-/* EFEITO AO PASSAR O MOUSE */
-
-.certificado:hover {
-    transform: translateY(-10px);
-}
-
-
-/* IMAGEM DO CERTIFICADO */
-
-.certificado img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-/* TÍTULO */
-
-.certificado h2 {
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-
-/* TEXTO */
-
-.certificado p {
-    font-size: 16px;
-}main > h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 40px 0 30px;
-}
-.pagina-social {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.pagina-social h1 {
-    text-transform: uppercase;
-    color: #ffd900;
-    margin-bottom: 20px;
-}
-
-.pagina-social p {
-    text-align: center;
-    color: rgb(112, 112, 112);
-}
-
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 50px;
-}
-
-.redes a {
-    width: 180px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    text-decoration: none;
-    color: rgb(74, 74, 75);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-}
-
-.redes a:hover {
-    transform: translateY(-10px);
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.redes img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-
-.redes span {
-    display: block;
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-}.pagina-contato {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.pagina-contato h1 {
-    color: #ffd900;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.pagina-contato p {
-    color: rgb(0, 190, 180);
-}
-
-.formulario {
-    width: 500px;
-    max-width: 90%;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.formulario label {
-    color: white;
-    text-align: left;
-    font-weight: bold;
-}
-
-.formulario input,
-.formulario textarea {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-}
-
-.formulario textarea {
-    resize: vertical;
-}
-
-.formulario button {
-    margin-top: 15px;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #474747;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.formulario button:hover {
-    background-color: white;
-    transform: scale(1.03);
-}
-
-.pagina-sobre {
-    padding: 50px 40px;
-    text-align: center;
-}
-
-.pagina-sobre > h1 {
-    color: #ffd900;
-    text-transform: uppercase;
-    margin-bottom: 70px;
-}
-
-.sobre-conteudo {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.foto-sobre {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #ffd900;
-
+    border: 3px solid #333333; /* Borda cinza chumbo */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
-/* Animação da foto */
-
-.foto-sobre:hover {
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-.texto-sobre {
-    max-width: 650px;
-    text-align: left;
-    color: white;
-}
-
-.texto-sobre h2 {
-    color: #ffd900;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.texto-sobre h2:first-child {
-    margin-top: 0;
-}
-
-.texto-sobre p {
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover:not(.active) {
-  background-color: #111111;
-}
-
-ul li a.active {
-  background-color: #04AA6D;
-}
+.estudante-imagem:hover {
+    transform: translateY(-12
