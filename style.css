@@ -195,7 +195,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #ffd900;
+    background-color: #494948;
     color: #000;
 }
 /* TÍTULO DOS CERTIFICADOS */
@@ -294,7 +294,7 @@ main > h1 {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     text-decoration: none;
-    color: rgb(34, 0, 255);
+    color: rgb(74, 74, 75);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
@@ -368,7 +368,7 @@ main > h1 {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background-color: #ffd900;
+    background-color: #474747;
     color: #000;
     font-size: 16px;
     font-weight: bold;
